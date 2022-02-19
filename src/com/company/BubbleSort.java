@@ -1,7 +1,7 @@
 package com.company;
 
 class BubbleSort {
-    public int[] sortArray(int[] nums) {
+    static int[] sortArray(int[] nums) {
         int n  = nums.length;
         for(int i = 0; i < n - 1; i++){
             for(int j = 0; j < n - i - 1; j++){
@@ -13,5 +13,12 @@ class BubbleSort {
             }
         }
         return nums;
+    }
+    public static void main(String[] args){
+        int arr[] = {11, 12, 13, 5, 6, 7};
+        sortArray(arr);
+        for(int i: arr){
+            System.out.print(i + " ");
+        }
     }
 }
